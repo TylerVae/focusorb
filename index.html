@@ -4,46 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <header>
-        <nav>
-        <p align="left"></p><img src="https://placehold.co/120x60" alt="Logo" /></p>
-        <p align="right"><a href="#">Mon compte</a> | <a href="#">Mes commandes</a> | <a href="#">Paramètres</a></p>
+        <nav aria-label="Main">
+            <img src="https://placehold.co/120x60" alt="Logo" />
+            <a href="#features">Features</a> 
+            <a href="#pricing">Pricing</a> 
+            <a href="#waitlist">Waitlist</a>
         </nav>
     </header>
 
     <main>
-      
-        <section>
-            <h1>FocusOrb, la première poudre colombienne légale qui t'aide vraiment à te concentrer !</h1>
+        <section aria-labelledby="hero-title">
+            <h1 id="hero-title">FocusOrb, la première poudre colombienne légale qui t'aide vraiment à te concentrer !</h1>
             <p>C'est du jamais vu depuis Pablo Escobar lui même. FocusOrb est la solution à tes problèmes de focus. </p>
             <p>FocusOrb, c'est un mélange de <span style="color: #108a00;">créatine</span>, de <span style="color: #108a00;">caféine</span> et de <span style="color: #108a00;">poudre d'os</span> qui te permet de rester concentré pendant des heures sans les effets secondaires des drogues dures.</p>
-            <br></br>
+            <p><a href="#waitlist">Rejoindre la bêta</a></p>
         </section>
         
-        <section>
-            <p align="center"><button><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Commander maintenant</a></button></p>
-        <br></br>
+        <section aria-labelledby="features-title">
+            <h2 id="features-title">Ce que FocusOrb fait pour toi</h2>
+            <article>
+                <h3>Améliore la concentration</h3>
+                <p>La <b>caféine</b> te garde éveillé, la <b>créatine</b> nourrit ton cerveau.</p>
+            </article>
+            <article>
+                <h3>Augmente la productivité</h3>
+                <p>Des <b>heures</b> de travail sans décrocher et sans les effets secondaires des <b>drogues dures</b>.</p>
+            </article>
+            <article>
+                <h3>Des produits naturels</h3>
+                <p>La caféine et la créatine sont mélangés à de la <b>poudre d'os</b> qui vient t'apporter tous les compléments nécessaires pour un corps fort et en bonne santé.</p>
+            </article>
         </section>
 
-        <section>
-            <ul>
-                <li><b>Améliore</b> la concentration</li>
-                <li><b>Augmente</b> la productivité</li>
-                <li><b>Naturel</b> et sans effets secondaires</li>
-             <br></br>
+        <section aria-labelledby="voices-title">
+            <h2 id="voices-title">Ils ont sniffé pour vous</h2>
+            <blockquote>
+                <p><i>"J'ai changer le luminaire du salon comme m'a femme m'avait demandé il y a deux ans en moins de 14 minutes !" Carlos - Père émérite</i></p>
+            </blockquote>
+            <blockquote>
+                <p><i>"J'ai eu le temps de remettre le luminaire cassé du salon en deux minutes avant que mon con de mari vienne s'en occuper, et derrière j'ai monté tout le dossier pour le divorce. Je peux plus le blairer mais super cette poudre." Source anonyme</i></p>
+            </blockquote>
+            <blockquote>
+                <p><i>"J'avais mal lu, je croyais que c'était mixé avec de la kétamine, un peu déçu. En revanche j'étais très en forme pour être déçu. Solide produit." Jack - Pharmacie vivante</i></p>
+            </blockquote>
         </section>
 
-        <section>
-            <h2><b>Rejoindre la bêta</b></h2>
-            <p>Vous pouvez changer votre quotidien dès à présent. <a href="#">Réserver ma place</a> </p>
+        <section aria-labelledby="pricing-title">
+            <h2 id="pricing-title">Tarifs</h2>
+            <dl>
+                <dt>Découverte</dt>
+                <dd>60€ - 2 grammes - formule parfaite pour débuter</dd>
+                <dt>Focus</dt>
+                <dd>400 € par mois – 12g livrés chez vous chaque début de mois</dd>
+            </dl>
         </section>
+
+        <section aria-labelledby="waitlist-title">
+            <h2 id="waitlist-title">Join the beta waitlist.</h2>
+                <form>
+                    <fieldset>
+                        <legend>Your details</legend>
+                            <label for="Fullname">Full name :</label>
+                                <input type="text" id="Fullname" name="Fullname" autocomplete="name" required>
+                            <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required>
+                                <br></br>
+                            <label>
+                                <select role="role" id="role" name="role" required>
+                                <option value="">Sélectionner un rôle : </option>
+                                <option value="Fondateur">Fondateur</option>
+                                <option value="Opérateur">Opérateur</option>
+                                <option value="Ingénieur">Ingénieur</option>
+                                </select>
+                            </label>
+                            <br></br>
+                            <label for="message2">Parlez-nous de votre équipe (optionnel)</label>
+                            <br></br>
+                            <textarea id="message2" name="message2" rows="3" cols="50">
+                            J'ai X ans d'expérience dans le domaine de...
+                            </textarea>
+                            <br></br>
+                            <input aria-describedby="checkbox-description" type="checkbox" id="checkbox" name="checkbox" required>
+                            <label for="checkbox" id="checkbox-description">J'accepte les conditions d'utilisation</label> 
+                             
+
+                    </fieldset>
+                    <button type="submit">Reserve beta seat</button>
+
+                </form>
+            
 
     </main>
 
 </body>
 
 <footer>
-<p>© 2026 FocusOrb. 1537 Paper Street, Wilmington, Delaware. Tous droits réservés.</p>
+    <nav aria-label="Footer">
+        <p><small>&copy; 2026 FocusOrb. 1537 Paper Street, Wilmington, Delaware. Tous droits réservés.</small></p>
+    </nav>
 </footer>
 </html>
